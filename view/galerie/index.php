@@ -54,7 +54,7 @@ if (isset($data['galleries']) && is_array($data['galleries']) && count($data['ga
                         <div class="spacer">&nbsp;</div>
 <?php
             if (Clementine::$config['module_galerie']['show_description']) {
-                echo '<p class="detailgalerie_description">' . nl2br($gallery['description']) . '</p>';
+                echo $gallery['description'];
             }
 ?>
                     </div>
